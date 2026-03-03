@@ -1,0 +1,41 @@
+{
+  "name": "TeamMember",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "Team member's full name"
+    },
+    "role": {
+      "type": "string",
+      "description": "Role or position"
+    },
+    "photo_url": {
+      "type": "string",
+      "description": "Profile photo URL"
+    },
+    "skills": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "List of skills"
+    },
+    "bio": {
+      "type": "string",
+      "description": "Short bio or description"
+    },
+    "email": {
+      "type": "string",
+      "description": "Contact email"
+    },
+    "linkedin": {
+      "type": "string",
+      "description": "LinkedIn profile URL"
+    }
+  },
+  "required": [
+    "name",
+    "role"
+  ]
+}
