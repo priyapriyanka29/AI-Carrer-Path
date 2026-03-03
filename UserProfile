@@ -1,0 +1,75 @@
+{
+  "name": "UserProfile",
+  "type": "object",
+  "properties": {
+    "saved_careers": {
+      "type": "array",
+      "description": "List of saved career IDs",
+      "items": {
+        "type": "number"
+      }
+    },
+    "saved_scholarships": {
+      "type": "array",
+      "description": "List of saved scholarship IDs",
+      "items": {
+        "type": "number"
+      }
+    },
+    "career_goal": {
+      "type": "string",
+      "description": "Primary career goal"
+    },
+    "target_year": {
+      "type": "string",
+      "description": "Target year to achieve goal"
+    },
+    "current_class": {
+      "type": "string",
+      "enum": [
+        "8th",
+        "9th",
+        "10th",
+        "11th",
+        "12th",
+        "Graduate",
+        "Other"
+      ],
+      "description": "Current education level"
+    },
+    "preferred_stream": {
+      "type": "string",
+      "enum": [
+        "Science",
+        "Commerce",
+        "Arts",
+        "Undecided"
+      ],
+      "description": "Preferred stream"
+    },
+    "roadmap_progress": {
+      "type": "object",
+      "description": "Progress for each course roadmap",
+      "additionalProperties": {
+        "type": "object",
+        "properties": {
+          "timeline": {
+            "type": "string"
+          },
+          "completed_steps": {
+            "type": "array",
+            "items": {
+              "type": "number"
+            }
+          }
+        }
+      }
+    },
+    "motivational_enabled": {
+      "type": "boolean",
+      "default": true,
+      "description": "Receive motivational messages"
+    }
+  },
+  "required": []
+}
