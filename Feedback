@@ -1,0 +1,30 @@
+{
+  "name": "Feedback",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "Student's name"
+    },
+    "district": {
+      "type": "string",
+      "description": "District or location"
+    },
+    "state": {
+      "type": "string",
+      "description": "State"
+    },
+    "message": {
+      "type": "string",
+      "description": "Feedback or question"
+    },
+    "email": {
+      "type": "string",
+      "description": "Contact email (optional)"
+    }
+  },
+  "required": [
+    "name",
+    "message"
+  ]
+}
